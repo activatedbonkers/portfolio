@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
+import { email } from '@config';
 import { navDelay, loaderDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
 
@@ -17,12 +18,26 @@ const StyledHeroSection = styled.section`
     padding-top: var(--nav-height);
   }
 
-  h1 {
-    margin: 0 0 30px 4px;
+   {
+    /*h1 {
+    margin: 0 0 30px 30px;
     color: var(--green);
     font-family: var(--font-mono);
     font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
     font-weight: 400;
+
+    @media (max-width: 480px) {
+      margin: 0 0 20px 2px;
+    }
+  }*/
+  }
+
+  h1 {
+    margin: 0 0 30px 30px;
+    color: var(--orange);
+    font-family: var(--font-sand);
+    font-size: clamp(32px, 10vw, 48px); /* Larger font size */
+    font-weight: 600;
 
     @media (max-width: 480px) {
       margin: 0 0 20px 2px;
@@ -59,33 +74,29 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-  const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Brittany Chiang.</h2>;
-  const three = <h3 className="big-heading">I build things for the web.</h3>;
+  const one = <h1>Hello, I am Syed Hussaini</h1>;
+  {
+    /*const two = <h2 className="big-heading">Syed Hussaini.</h2>;*/
+  }
+  const three = <h2 className="big-heading">Crafting Code, Shaping the Web, Building Tomorrow.</h2>;
   const four = (
     <>
       <p>
-        I’m a software engineer specializing in building (and occasionally designing) exceptional
-        digital experiences. Currently, I’m focused on building accessible, human-centered products
-        at{' '}
-        <a href="https://upstatement.com/" target="_blank" rel="noreferrer">
+        As a web developer and data science enthusiast, I am passionate about crafting exceptional
+        online experiences and uncovering the hidden treasures within data.{' '}
+        {/*<a href="https://upstatement.com/" target="_blank" rel="noreferrer">
           Upstatement
-        </a>
-        .
+        </a> */}
       </p>
     </>
   );
   const five = (
-    <a
-      className="email-link"
-      href="https://www.newline.co/courses/build-a-spotify-connected-app"
-      target="_blank"
-      rel="noreferrer">
-      Check out my course!
+    <a className="email-link" href={`mailto:${email}`} target="_blank" rel="noreferrer">
+      Get in touch!
     </a>
   );
 
-  const items = [one, two, three, four, five];
+  const items = [one, three, four, five];
 
   return (
     <StyledHeroSection>

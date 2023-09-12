@@ -6,7 +6,6 @@ import CalibreMediumWoff from '@fonts/Calibre/Calibre-Medium.woff';
 import CalibreMediumWoff2 from '@fonts/Calibre/Calibre-Medium.woff2';
 import CalibreSemiboldWoff from '@fonts/Calibre/Calibre-Semibold.woff';
 import CalibreSemiboldWoff2 from '@fonts/Calibre/Calibre-Semibold.woff2';
-
 import CalibreRegularItalicWoff from '@fonts/Calibre/Calibre-RegularItalic.woff';
 import CalibreRegularItalicWoff2 from '@fonts/Calibre/Calibre-RegularItalic.woff2';
 import CalibreMediumItalicWoff from '@fonts/Calibre/Calibre-MediumItalic.woff';
@@ -18,11 +17,17 @@ import SFMonoRegularWoff from '@fonts/SFMono/SFMono-Regular.woff';
 import SFMonoRegularWoff2 from '@fonts/SFMono/SFMono-Regular.woff2';
 import SFMonoSemiboldWoff from '@fonts/SFMono/SFMono-Semibold.woff';
 import SFMonoSemiboldWoff2 from '@fonts/SFMono/SFMono-Semibold.woff2';
-
 import SFMonoRegularItalicWoff from '@fonts/SFMono/SFMono-RegularItalic.woff';
 import SFMonoRegularItalicWoff2 from '@fonts/SFMono/SFMono-RegularItalic.woff2';
 import SFMonoSemiboldItalicWoff from '@fonts/SFMono/SFMono-SemiboldItalic.woff';
 import SFMonoSemiboldItalicWoff2 from '@fonts/SFMono/SFMono-SemiboldItalic.woff2';
+
+import QuickSandBoldWoff2 from '@fonts/Quicksand/Quicksand-Bold.woff2';
+import QuickSandBoldWoff from '@fonts/Quicksand/Quicksand-Bold.woff';
+import QuickSandLightWoff from '@fonts/Quicksand/Quicksand-Light.woff';
+import QuickSandLightWoff2 from '@fonts/Quicksand/Quicksand-Light.woff2';
+import QuickSandMediumWoff2 from '@fonts/Quicksand/Quicksand-Medium.woff2';
+import QuickSandMediumWoff from '@fonts/Quicksand/Quicksand-Medium.woff';
 
 const calibreNormalWeights = {
   400: [CalibreRegularWoff, CalibreRegularWoff2],
@@ -46,6 +51,12 @@ const sfMonoItalicWeights = {
   600: [SFMonoSemiboldItalicWoff, SFMonoSemiboldItalicWoff2],
 };
 
+const quickSandNormalWeights = {
+  400: [QuickSandLightWoff, QuickSandLightWoff2],
+  500: [QuickSandMediumWoff, QuickSandMediumWoff2],
+  600: [QuickSandBoldWoff, QuickSandBoldWoff2],
+};
+
 const calibre = {
   name: 'Calibre',
   normal: calibreNormalWeights,
@@ -56,6 +67,11 @@ const sfMono = {
   name: 'SF Mono',
   normal: sfMonoNormalWeights,
   italic: sfMonoItalicWeights,
+};
+
+const quicksand = {
+  name: 'Quick Sand',
+  normal: quickSandNormalWeights,
 };
 
 const createFontFaces = (family, style = 'normal') => {
@@ -86,8 +102,10 @@ const calibreItalic = createFontFaces(calibre, 'italic');
 const sfMonoNormal = createFontFaces(sfMono);
 const sfMonoItalic = createFontFaces(sfMono, 'italic');
 
+const quickSandNormal = createFontFaces(quicksand);
+
 const Fonts = css`
-  ${calibreNormal + calibreItalic + sfMonoNormal + sfMonoItalic}
+  ${calibreNormal + calibreItalic + sfMonoNormal + sfMonoItalic + quickSandNormal}
 `;
 
 export default Fonts;
