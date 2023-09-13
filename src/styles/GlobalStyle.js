@@ -46,7 +46,7 @@ const GlobalStyle = createGlobalStyle`
     focus.
   */
   :focus-visible {
-    outline: 2px dashed var(--green);
+    outline: 2px dashed var(--orange);
     outline-offset: 3px;
   }
 

@@ -15,7 +15,7 @@ const button = css`
   &:hover,
   &:focus-visible {
     outline: none;
-    box-shadow: 4px 4px 0 0 var(--green);
+    box-shadow: 4px 4px 0 0 var(--orange);
     transform: translate(-5px, -5px);
   }
   &:after {
@@ -59,8 +59,8 @@ const mixins = {
 
     &:hover,
     &:focus-visible {
-      color: var(--green);
-      outline: 0;
+      color: var(--orange);
+      outline: 1;
       &:after {
         width: 100%;
       }
@@ -101,7 +101,7 @@ const mixins = {
     &:hover,
     &:focus-visible {
       outline: none;
-      box-shadow: 3px 3px 0 0 var(--green);
+      box-shadow: 3px 3px 0 0 var(--orange);
       transform: translate(-4px, -4px);
     }
     &:after {
@@ -124,7 +124,7 @@ const mixins = {
     &:hover,
     &:focus-visible {
       outline: none;
-      box-shadow: 4px 4px 0 0 var(--green);
+      box-shadow: 4px 4px 0 0 var(--orange);
       transform: translate(-5px, -5px);
     }
     &:after {
