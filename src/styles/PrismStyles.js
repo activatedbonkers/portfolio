@@ -28,7 +28,7 @@ const PrismStyles = css`
     padding: 1.25em;
     overflow: auto;
     position: relative;
-    font-family: var(--font-mono);
+    font-family: var(--font-sand);
     font-size: var(--fz-md);
   }
 

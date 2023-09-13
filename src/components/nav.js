@@ -150,7 +150,9 @@ const StyledLinks = styled.div`
     ${({ theme }) => theme.mixins.smallButton};
     margin-left: 15px;
     font-size: var(--fz-xs);
-`;
+    font-family: var(--font-sand);
+    font-size: var(--fz-xl);
+    `;
 
 const Nav = ({ isHome }) => {
   const [isMounted, setIsMounted] = useState(!isHome);

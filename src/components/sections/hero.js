@@ -58,6 +58,9 @@ const StyledHeroSection = styled.section`
   .email-link {
     ${({ theme }) => theme.mixins.bigButton};
     margin-top: 50px;
+    font-family: var(--font-sand);
+    font-size: var(--fz-xl);
+    font-weight: 500;
   }
 `;
 
