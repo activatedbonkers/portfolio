@@ -443,6 +443,8 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
   }
 
+
+
   ${TransitionStyles};
 
   ${PrismStyles};

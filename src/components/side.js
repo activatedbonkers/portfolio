@@ -6,13 +6,21 @@ import { loaderDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
 
 const StyledSideElement = styled.div`
-  width: 40px;
+  width: 50px;
   position: fixed;
   bottom: 0;
   left: ${props => (props.orientation === 'left' ? '40px' : 'auto')};
   right: ${props => (props.orientation === 'left' ? 'auto' : '40px')};
   z-index: 10;
-  color: var(--light-slate);
+  color: var(--green);
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s;
+
+  &:active,
+  &:hover {
+    color: var(--orange);
+    transform: scale(1.5); /* Increase size on hover */
+  }
 
   @media (max-width: 1080px) {
     left: ${props => (props.orientation === 'left' ? '20px' : 'auto')};
