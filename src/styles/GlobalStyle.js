@@ -195,7 +195,7 @@ const GlobalStyle = createGlobalStyle`
       content: '0' counter(section) '.';
       margin-right: 10px;
       color: var(--green);
-      font-family: var(--font-mono);
+      font-family: var(--font-sand);
       font-size: clamp(var(--fz-md), 3vw, var(--fz-xl));
       font-weight: 400;
 
@@ -356,7 +356,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   code {
-    font-family: var(--font-mono);
+    font-family: var(--font-sand);
     font-size: var(--fz-md);
   }
 
@@ -391,7 +391,7 @@ const GlobalStyle = createGlobalStyle`
 
   .overline {
     color: var(--green);
-    font-family: var(--font-mono);
+    font-family: var(--font-sand);
     font-size: var(--fz-md);
     font-weight: 400;
   }
@@ -400,7 +400,7 @@ const GlobalStyle = createGlobalStyle`
     color: var(--green);
     margin: 0 0 20px 0;
     font-size: var(--fz-md);
-    font-family: var(--font-mono);
+    font-family: var(--font-sand);
     font-weight: 400;
     line-height: 1.5;
     @media (max-width: 1080px) {
@@ -430,7 +430,7 @@ const GlobalStyle = createGlobalStyle`
 
     a {
       ${({ theme }) => theme.mixins.inlineLink};
-      font-family: var(--font-mono);
+      font-family: var(--font-sand);
       font-size: var(--fz-sm);
       font-weight: 600;
       line-height: 1.5;

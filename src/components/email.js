@@ -22,8 +22,10 @@ const StyledLinkWrapper = styled.div`
   a {
     margin: 20px auto;
     padding: 10px;
-    font-family: var(--font-mono);
-    font-size: var(--fz-xxs);
+    font-family: var(--font-sand);
+    color: var(--green);
+    font-weight: 500;
+    font-size: var(--fz-xl);
     line-height: var(--fz-lg);
     letter-spacing: 0.1em;
     writing-mode: vertical-rl;
@@ -31,6 +33,8 @@ const StyledLinkWrapper = styled.div`
     &:hover,
     &:focus {
       transform: translateY(-3px);
+      color: var(--orange);
+      font-size: var(--fz-xxl);
     }
   }
 `;
