@@ -32,8 +32,10 @@ const StyledText = styled.div`
       position: relative;
       margin-bottom: 10px;
       padding-left: 20px;
-      font-family: var(--font-mono);
+      font-family: var(--font-sand);
       font-size: var(--fz-xs);
+      font-weight: 500;
+      color: var(--green);
 
       &:before {
         content: '▹';
@@ -125,7 +127,17 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = [
+    'HTML5 (5/5)',
+    'CSS3 (4/5)',
+    'JavaScript (4/5)',
+    'React (3/5)',
+    'Node.js (2.5/5)',
+    'MongoDB (2.5/5)',
+    'AWS (3.5/5)',
+    'Python (3/5)',
+    'c++ (4/5)',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -134,14 +146,26 @@ const About = () => {
       <div className="inner">
         <StyledText>
           <div>
+            <p>Hey there! I'm Syed Junaid Hussaini, a web developer and data science enthusiast.</p>
             <p>
-              Hello! My name is Syed Junaid Hussaini and I enjoy creating things that live on the
-              internet. My interest in web development started back in 2016 when I decided to try
-              drawing using CSS — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+              In 2016, I began to learn about the fascinating field of web development and how
+              websites are created.
+              <br />I had no idea that creating a simple HTML website would lead to the discovery of
+              an incredible amount of HTML and CSS knowledge!
             </p>
-
             <p>
+              I've had the good fortune to navigate through the landscapes of developing
+              technologies, startups, corporate giants, niche enterprises, and the discipline of
+              data science.
+            </p>
+            <p>
+              Zooming out to the present, the internet presents itself as a knowledge resource.
+              <br />
+              My current goal is to develop dynamic, user-friendly web apps that smoothly work with
+              many platforms and devices in order to shape accessible digital products and
+              experiences for a wide spectrum of clients.
+            </p>
+            {/* <p>
               Fast-forward to today, and I’ve had the privilege of working at{' '}
               <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
               <a href="https://starry.com/">a start-up</a>,{' '}
@@ -150,7 +174,7 @@ const About = () => {
               main focus these days is building accessible, inclusive products and digital
               experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
               clients.
-            </p>
+              </p>
 
             <p>
               I also recently{' '}
@@ -159,9 +183,9 @@ const About = () => {
               </a>{' '}
               that covers everything you need to build a web app with the Spotify API using Node
               &amp; React.
-            </p>
+            </p>*/}
 
-            <p>Here are a few technologies I’ve been working with recently:</p>
+            <p>Here's a glimpse of the tech tools I've been mastering lately:</p>
           </div>
 
           <ul className="skills-list">
