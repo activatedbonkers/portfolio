@@ -77,6 +77,7 @@ Yes, you can fork this repo. Please give me proper credit by linking back to [br
 
 | Color          | Hex                                                                |
 | -------------- | ------------------------------------------------------------------ |
+| Black          | ![#000000](https://via.placeholder.com/10/000000?text=+) `#000000` |
 | Navy           | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) `#0a192f` |
 | Light Navy     | ![#112240](https://via.placeholder.com/10/0a192f?text=+) `#112240` |
 | Lightest Navy  | ![#233554](https://via.placeholder.com/10/303C55?text=+) `#233554` |

@@ -23,7 +23,7 @@ const StyledLinkWrapper = styled.div`
     margin: 20px auto;
     padding: 10px;
     font-family: var(--font-sand);
-    color: var(--green);
+    color: var(--blue);
     font-weight: 500;
     font-size: var(--fz-xl);
     line-height: var(--fz-lg);

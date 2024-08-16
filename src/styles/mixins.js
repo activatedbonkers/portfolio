@@ -1,9 +1,9 @@
 import { css } from 'styled-components';
 
 const button = css`
-  color: var(--green);
+  color: var(--blue);
   background-color: transparent;
-  border: 1px solid var(--green);
+  border: 1px solid var(--blue);
   border-radius: var(--border-radius);
   font-size: var(--fz-xs);
   font-family: var(--font-mono);
@@ -46,7 +46,7 @@ const mixins = {
 
     &:hover,
     &:focus-visible {
-      color: var(--green);
+      color: var(--blue);
       outline: 0;
     }
   `,
@@ -54,7 +54,7 @@ const mixins = {
   inlineLink: css`
     display: inline-block;
     position: relative;
-    color: var(--green);
+    color: var(--blue);
     transition: var(--transition);
 
     &:hover,
@@ -65,7 +65,7 @@ const mixins = {
         width: 100%;
       }
       & > * {
-        color: var(--green) !important;
+        color: var(--blue) !important;
         transition: var(--transition);
       }
     }
@@ -76,7 +76,7 @@ const mixins = {
       height: 1px;
       position: relative;
       bottom: 0.37em;
-      background-color: var(--green);
+      background-color: var(--blue);
       opacity: 0.5;
       @media (prefers-reduced-motion: no-preference) {
         transition: var(--transition);
@@ -87,9 +87,9 @@ const mixins = {
   button,
 
   smallButton: css`
-    color: var(--green);
+    color: var(--blue);
     background-color: transparent;
-    border: 1px solid var(--green);
+    border: 1px solid var(--blue);
     border-radius: var(--border-radius);
     padding: 0.75rem 1rem;
     font-size: var(--fz-xs);
@@ -110,9 +110,9 @@ const mixins = {
   `,
 
   bigButton: css`
-    color: var(--green);
+    color: var(--blue);
     background-color: transparent;
-    border: 1px solid var(--green);
+    border: 1px solid var(--blue);
     border-radius: var(--border-radius);
     padding: 1.25rem 1.75rem;
     font-size: var(--fz-sm);
@@ -155,7 +155,7 @@ const mixins = {
         content: '▹';
         position: absolute;
         left: 0;
-        color: var(--green);
+        color: var(--blue);
       }
     }
   `,

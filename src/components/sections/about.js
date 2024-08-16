@@ -35,13 +35,13 @@ const StyledText = styled.div`
       font-family: var(--font-sand);
       font-size: var(--fz-xs);
       font-weight: 500;
-      color: var(--green);
+      color: var(--blue);
 
       &:before {
         content: '▹';
         position: absolute;
         left: 0;
-        color: var(--green);
+        color: var(--blue);
         font-size: var(--fz-sm);
         line-height: 12px;
       }
@@ -63,7 +63,7 @@ const StyledPic = styled.div`
     position: relative;
     width: 100%;
     border-radius: var(--border-radius);
-    background-color: var(--green);
+    background-color: var(--blue);
 
     &:hover,
     &:focus {
@@ -107,7 +107,7 @@ const StyledPic = styled.div`
     }
 
     &:after {
-      border: 2px solid var(--green);
+      border: 2px solid var(--blue);
       top: 14px;
       left: 14px;
       z-index: -1;

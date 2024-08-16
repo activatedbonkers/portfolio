@@ -27,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
 
   /* Provide basic, default focus styles.*/
   :focus {
-    outline: 2px dashed var(--green);
+    outline: 2px dashed var(--blue);
     outline-offset: 3px;
   }
 
@@ -74,7 +74,7 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    background-color: var(--navy);
+    background-color: var(--black);
     color: var(--slate);
     font-family: var(--font-sand);
     font-size: var(--fz-lg);
@@ -195,7 +195,7 @@ const GlobalStyle = createGlobalStyle`
       counter-increment: section;
       content: '0' counter(section) '.';
       margin-right: 10px;
-      color: var(--green);
+      color: var(--blue);
       font-family: var(--font-sand);
       font-size: clamp(var(--fz-md), 3vw, var(--fz-xl));
       font-weight: 400;
@@ -262,7 +262,7 @@ const GlobalStyle = createGlobalStyle`
 
     &:hover,
     &:focus {
-      color: var(--green);
+      color: var(--blue);
     }
 
     &.inline-link {
@@ -326,14 +326,14 @@ const GlobalStyle = createGlobalStyle`
           content: '▹';
           position: absolute;
           left: 0;
-          color: var(--green);
+          color: var(--blue);
         }
       }
     }
   }
 
   blockquote {
-    border-left-color: var(--green);
+    border-left-color: var(--blue);
     border-left-style: solid;
     border-left-width: 1px;
     margin-left: 0px;
@@ -373,7 +373,7 @@ const GlobalStyle = createGlobalStyle`
 
     &:hover,
     &:focus {
-      background-color: var(--green);
+      background-color: var(--blue);
       color: var(--navy);
       top: 0;
       left: 0;
@@ -387,18 +387,18 @@ const GlobalStyle = createGlobalStyle`
   }
 
   #logo {
-    color: var(--green);
+    color: var(--blue);
   }
 
   .overline {
-    color: var(--green);
+    color: var(--blue);
     font-family: var(--font-sand);
     font-size: var(--fz-md);
     font-weight: 400;
   }
 
   .subtitle {
-    color: var(--green);
+    color: var(--blue);
     margin: 0 0 20px 0;
     font-size: var(--fz-md);
     font-family: var(--font-sand);
@@ -421,7 +421,7 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     align-items: center;
     margin-bottom: 50px;
-    color: var(--green);
+    color: var(--blue);
 
     .arrow {
       display: block;
