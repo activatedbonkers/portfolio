@@ -18,23 +18,9 @@ const StyledHeroSection = styled.section`
     padding-top: var(--nav-height);
   }
 
-   {
-    /*h1 {
-    margin: 0 0 30px 30px;
-    color: var(--blue);
-    font-family: var(--font-mono);
-    font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
-    font-weight: 400;
-
-    @media (max-width: 480px) {
-      margin: 0 0 20px 2px;
-    }
-  }*/
-  }
-
   h1 {
-    margin: 0 0 30px 30px;
-    color: var(--orange);
+    margin: 0 0 20px 0;
+    color: var(--blue);
     font-family: var(--font-sand);
     font-size: clamp(32px, 10vw, 48px); /* Larger font size */
     font-weight: 600;
@@ -81,12 +67,13 @@ const Hero = () => {
   {
     /*const two = <h2 className="big-heading">Syed Hussaini.</h2>;*/
   }
-  const three = <h2 className="big-heading">Crafting Code, Shaping the Web, Building Tomorrow.</h2>;
+  const three = (
+    <h2 className="medium-heading ">Crafting Code, Shaping the Web, Building Tomorrow.</h2>
+  );
   const four = (
     <>
       <p>
-        As a web developer and data science enthusiast, I am passionate about crafting exceptional
-        online experiences and uncovering the hidden treasures within data.{' '}
+        I am passionate about crafting exceptional online experiences.{' '}
         {/*<a href="https://upstatement.com/" target="_blank" rel="noreferrer">
           Upstatement
         </a> */}
