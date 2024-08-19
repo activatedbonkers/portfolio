@@ -8,10 +8,9 @@
 	perspective: 100rem;
 	perspective-origin: center center;
 	transform-style: preserve-3d;
-	pointer-events: none;
 	-webkit-mask-image: var(--mask);
 	mask-image: var(--mask);
-	z-index: 2;
+	z-index: -1;
 }
 
 .fish {
@@ -273,6 +272,7 @@
 
 .bubbles {
 	position: fixed;
+	z-index: -1;
 	top: 0;
 	left: 0;
 	width: 100vw;
@@ -299,25 +299,25 @@
 	animation: bubbleMove 6s ease-in-out infinite;
 	
 	&:nth-child(1) {
-		top: 10%;
-		left: 20%;
-	  }
-	  &:nth-child(2) {
-		top: 20%;
-		left: 50%;
-	  }
-	  &:nth-child(3) {
-		top: 30%;
-		left: 70%;
-	  }
-	  &:nth-child(4) {
-		top: 40%;
-		left: 30%;
-	  }
-	  &:nth-child(5) {
-		top: 50%;
-		left: 60%;
-	  }
+    top: 10%;
+    left: 20%;
+  }
+  &:nth-child(2) {
+    top: 20%;
+    left: 50%;
+  }
+  &:nth-child(3) {
+    top: 30%;
+    left: 70%;
+  }
+  &:nth-child(4) {
+    top: 40%;
+    left: 30%;
+  }
+  &:nth-child(5) {
+    top: 50%;
+    left: 60%;
+  }
 }
 
 @keyframes bubbleMove {

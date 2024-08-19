@@ -18,8 +18,8 @@ const StyledSideElement = styled.div`
 
   &:active,
   &:hover {
-    color: var(--orange);
-    transform: scale(1.5); /* Increase size on hover */
+    color: var(--blue);
+    transform: scale(1.15); /* Increase size on hover */
   }
 
   @media (max-width: 1080px) {

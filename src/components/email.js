@@ -32,7 +32,6 @@ const StyledLinkWrapper = styled.div`
 
     &:hover,
     &:focus {
-      transform: translateY(-3px);
       color: var(--orange);
       font-size: var(--fz-xxl);
     }
