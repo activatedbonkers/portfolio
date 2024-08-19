@@ -128,15 +128,18 @@ const About = () => {
   }, []);
 
   const skills = [
-    'HTML5 (5/5)',
-    'CSS3 (4/5)',
-    'JavaScript (4/5)',
-    'React (3/5)',
-    'Node.js (2.5/5)',
-    'MongoDB (2.5/5)',
-    'AWS (3.5/5)',
-    'Python (3/5)',
-    'c++ (4/5)',
+    'HTML5',
+    'CSS3',
+    'JavaScript',
+    'TypeScript',
+    'Node',
+    'React',
+    'Express',
+    'MongoDB',
+    'AWS',
+    'Python',
+    'Wordpress',
+    'Shopify',
   ];
 
   return (
@@ -146,17 +149,16 @@ const About = () => {
       <div className="inner">
         <StyledText>
           <div>
-            <p>Hey there! I'm Syed Junaid Hussaini, a web developer and data science enthusiast.</p>
+            <p>Hey there! I'm Syed Junaid Hussaini, a web developer.</p>
             <p>
               In 2016, I began to learn about the fascinating field of web development and how
               websites are created.
               <br />I had no idea that creating a simple HTML website would lead to the discovery of
-              an incredible amount of HTML and CSS knowledge!
+              an incredible amount of knowledge!
             </p>
             <p>
               I've had the good fortune to navigate through the landscapes of developing
-              technologies, startups, corporate giants, niche enterprises, and the discipline of
-              data science.
+              technologies, startups, niche enterprises.
             </p>
             <p>
               Zooming out to the present, the internet presents itself as a knowledge resource.
