@@ -16,7 +16,7 @@ module.exports = {
     },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/bchiang7',
+      url: 'https://www.linkedin.com/in/sjh00',
     },
     {
       name: 'Whatsapp',

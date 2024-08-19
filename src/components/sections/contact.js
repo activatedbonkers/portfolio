@@ -8,6 +8,7 @@ const StyledContactSection = styled.section`
   max-width: 600px;
   margin: 0 auto 100px;
   text-align: center;
+  
 
   @media (max-width: 768px) {
     margin: 0 auto 50px;
@@ -17,7 +18,7 @@ const StyledContactSection = styled.section`
     display: block;
     margin-bottom: 20px;
     color: var(--blue);
-    font-family: var(--font-mono);
+    font-family: var(--font-sand);
     font-size: var(--fz-md);
     font-weight: 400;
 
@@ -38,7 +39,9 @@ const StyledContactSection = styled.section`
   .email-link {
     ${({ theme }) => theme.mixins.bigButton};
     margin-top: 50px;
-  }
+    font-family: var(--font-sand);
+    font-size: var(--fz-xl);
+    font-weight: 500;
 `;
 
 const Contact = () => {

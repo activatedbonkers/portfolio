@@ -17,7 +17,7 @@ const StyledProjectsSection = styled.section`
   }
 
   .archive-link {
-    font-family: var(--font-mono);
+    font-family: var(--font-sand);
     font-size: var(--fz-sm);
     &:after {
       bottom: 0.1em;
@@ -38,9 +38,11 @@ const StyledProjectsSection = styled.section`
   }
 
   .more-button {
-    ${({ theme }) => theme.mixins.button};
-    margin: 80px auto 0;
-  }
+    ${({ theme }) => theme.mixins.bigButton};
+    margin-top: 50px;
+    font-family: var(--font-sand);
+    font-size: var(--fz-xl);
+    font-weight: 500;
 `;
 
 const StyledProject = styled.li`
@@ -154,7 +156,7 @@ const StyledProject = styled.li`
     list-style: none;
 
     li {
-      font-family: var(--font-mono);
+      font-family: var(--font-sand);
       font-size: var(--fz-xxs);
       line-height: 1.75;
 

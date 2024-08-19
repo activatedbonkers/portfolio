@@ -118,7 +118,7 @@ const StyledProject = styled.li`
   .project-overline {
     margin: 10px 0;
     color: var(--blue);
-    font-family: var(--font-mono);
+    font-family: var(--font-sand);
     font-size: var(--fz-xs);
     font-weight: 400;
   }
@@ -193,7 +193,7 @@ const StyledProject = styled.li`
     li {
       margin: 0 20px 5px 0;
       color: var(--light-slate);
-      font-family: var(--font-mono);
+      font-family: var(--font-sand);
       font-size: var(--fz-xs);
       white-space: nowrap;
     }

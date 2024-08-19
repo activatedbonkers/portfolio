@@ -66,7 +66,7 @@ const PrismStyles = css`
   /* File names */
   .gatsby-code-title {
     padding: 1em 1.5em;
-    font-family: var(--font-mono);
+    font-family: var(--font-sand);
     font-size: var(--fz-xs);
     background-color: ${prismColors.bg};
     color: ${prismColors.grey};
@@ -97,7 +97,7 @@ const PrismStyles = css`
     background: var(--lightest-navy);
     color: var(--white);
     font-size: var(--fz-xxs);
-    font-family: var(--font-mono);
+    font-family: var(--font-sand);
     line-height: 1.5;
     letter-spacing: 0.1em;
     text-transform: uppercase;

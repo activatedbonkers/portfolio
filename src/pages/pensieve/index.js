@@ -116,7 +116,7 @@ const StyledPost = styled.li`
 
   .post__date {
     color: var(--light-slate);
-    font-family: var(--font-mono);
+    font-family: var(--font-sand);
     font-size: var(--fz-xxs);
     text-transform: uppercase;
   }
@@ -131,7 +131,7 @@ const StyledPost = styled.li`
 
     li {
       color: var(--blue);
-      font-family: var(--font-mono);
+      font-family: var(--font-sand);
       font-size: var(--fz-xxs);
       line-height: 1.75;
 

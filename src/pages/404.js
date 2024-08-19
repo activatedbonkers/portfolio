@@ -14,7 +14,7 @@ const StyledMainContainer = styled.main`
 `;
 const StyledTitle = styled.h1`
   color: var(--blue);
-  font-family: var(--font-mono);
+  font-family: var(--font-sand);
   font-size: clamp(100px, 25vw, 200px);
   line-height: 1;
 `;
