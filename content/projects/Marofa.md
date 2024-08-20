@@ -12,4 +12,4 @@ company: 'Marofa'
 showInProjects: true
 ---
 
-A webapp under development to find helpers and maids called [Marofa](https://marofa-2279c.web.app/).
+- A webapp under development to find helpers and maids called [Marofa](https://marofa-2279c.web.app/).
