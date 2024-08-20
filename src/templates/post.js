@@ -9,12 +9,14 @@ import { Layout } from '@components';
 const StyledPostContainer = styled.main`
   max-width: 1000px;
 `;
+
 const StyledPostHeader = styled.header`
   margin-bottom: 50px;
   .tag {
     margin-right: 10px;
   }
 `;
+
 const StyledPostContent = styled.div`
   margin-bottom: 100px;
   h1,
@@ -25,17 +27,14 @@ const StyledPostContent = styled.div`
   h6 {
     margin: 2em 0 1em;
   }
-
   p {
     margin: 1em 0;
     line-height: 1.5;
     color: var(--light-slate);
   }
-
   a {
     ${({ theme }) => theme.mixins.inlineLink};
   }
-
   code {
     background-color: var(--lightest-navy);
     color: var(--lightest-slate);
@@ -43,7 +42,6 @@ const StyledPostContent = styled.div`
     font-size: var(--fz-sm);
     padding: 0.2em 0.4em;
   }
-
   pre code {
     background-color: transparent;
     padding: 0;
@@ -51,6 +49,10 @@ const StyledPostContent = styled.div`
 `;
 
 const PostTemplate = ({ data, location }) => {
+  if (!data || !data.markdownRemark) {
+    return <p>Data not found</p>;
+  }
+
   const { frontmatter, html } = data.markdownRemark;
   const { title, date, tags } = frontmatter;
 
@@ -91,23 +93,31 @@ const PostTemplate = ({ data, location }) => {
   );
 };
 
-export default PostTemplate;
-
 PostTemplate.propTypes = {
-  data: PropTypes.object,
+  data: PropTypes.shape({
+    markdownRemark: PropTypes.shape({
+      frontmatter: PropTypes.shape({
+        title: PropTypes.string,
+        date: PropTypes.string,
+        tags: PropTypes.arrayOf(PropTypes.string),
+      }),
+      html: PropTypes.string,
+    }),
+  }),
   location: PropTypes.object,
 };
 
+export default PostTemplate;
+
 export const pageQuery = graphql`
-  query($path: String!) {
-    markdownRemark(frontmatter: { slug: { eq: $path } }) {
+  query ($slug: String!) {
+    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {
         title
-        description
         date
-        slug
         tags
+        slug
       }
     }
   }
