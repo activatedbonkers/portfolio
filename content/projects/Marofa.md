@@ -12,4 +12,4 @@ company: 'Marofa'
 showInProjects: true
 ---
 
-- A webapp under development to find helpers and maids called [Marofa](https://marofa-2279c.web.app/).
+- A webapp under development to find helpers and maids in Saudi Arabia. The app is named [Marofa](https://marofa-2279c.web.app/) in arabic which roughly translates to kindness, homliness.
